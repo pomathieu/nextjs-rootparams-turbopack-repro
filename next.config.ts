@@ -5,6 +5,7 @@ const withNextIntl = createNextIntlPlugin('./app/i18n/request.ts');
 
 const nextConfig: NextConfig = {
   cacheComponents: true,
+  staticPageGenerationTimeout: 120,
   experimental: {
     rootParams: true,
   },
